@@ -42,7 +42,7 @@ const Register = () => {
                 let postData = await axios.post(`${config.api}/register`, values)
                 alert(postData.data.message)
                 resetForm({ values: '' })
-                navigate('/')
+                navigate('/login')
             } catch (error) {
                 alert('Register Error!')
             }
