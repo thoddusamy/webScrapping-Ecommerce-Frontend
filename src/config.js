@@ -1,3 +1,3 @@
 export const config = {
-    api: 'http://localhost:3555'
+    api: 'https://thoddusamy-web-scraping.herokuapp.com'
 }
