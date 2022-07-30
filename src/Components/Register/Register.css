@@ -53,3 +53,18 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .regCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .regCol>.signUpImg {
+        display: none;
+    }
+
+}

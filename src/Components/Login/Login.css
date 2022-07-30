@@ -68,3 +68,18 @@
 form>p {
     margin: 0 !important;
 }
+
+@media screen and (max-width: 768px) {
+    .loginCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .loginCol>.loginImg {
+        display: none;
+    }
+
+}
