@@ -1,0 +1,37 @@
+.conatiner-fluid {
+    background-image: url('https://icon-library.com/images/background-icon/background-icon-2.jpg');
+    object-fit: cover;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container>h1 {
+    font-weight: bolder;
+}
+
+form>.row>.col-lg-6>label {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+form>.add_prod_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form>.add_prod_btn>button {
+    font-weight: bold !important;
+    width: 70%;
+    margin: 0 auto;
+    transition: transform 300ms ease-in-out;
+}
+
+form>.add_prod_btn>button:active {
+    transform: scale(0.95);
+}
+
+form>.row>.col-lg-6>p {
+    margin: 0 !important;
+}

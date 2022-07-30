@@ -1,0 +1,55 @@
+.regConFluid {
+    min-height: 100vh;
+    background-color: rgb(154, 87, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regCol {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 180px;
+}
+
+.regCol>.signUpImg>img {
+    width: 450px;
+    height: 480px;
+}
+
+.regRow>h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.regCol>form {
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 300px;
+}
+
+.regBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.regBtn>button {
+    font-weight: bold;
+    width: 60%;
+}
+
+.regCol>form>p {
+    text-align: center;
+    font-size: small;
+    font-weight: normal;
+}
+
+.eyeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

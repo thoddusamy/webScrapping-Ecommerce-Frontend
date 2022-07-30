@@ -1,0 +1,70 @@
+.loginConFluid {
+    min-height: 100vh;
+    background-color: rgb(31, 157, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCol {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    /* max-width: 1000px; */
+}
+
+.loginCol>.loginImg>img {
+    width: 400px;
+    height: 500px;
+}
+
+.loginRow>h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.loginCol>form {
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 300px;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.loginBtn>button {
+    font-weight: bold;
+    width: 60%;
+}
+
+.loginCol>form>p {
+    text-align: center;
+    font-size: small;
+    font-weight: normal;
+}
+
+.eyeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyeBtn>input {
+    margin-left: -10px;
+}
+
+.eyeBtn>span {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+form>p {
+    margin: 0 !important;
+}

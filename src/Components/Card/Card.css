@@ -1,0 +1,68 @@
+.card_row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card_container {
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 250px !important;
+    height: 400px;
+}
+
+.card_container>.img_section>img {
+    width: 200px;
+    height: 200px;
+}
+
+.desc_section {
+    line-height: 28px;
+    padding: 0 20px;
+}
+
+.prod_name {
+    font-weight: bold;
+}
+
+.prod_ram {
+    margin: 0;
+    color: gray;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.prod_clr,
+.prod_cus_count {
+    color: gray;
+    font-weight: 500;
+}
+
+.prod_rating {
+    font-size: small;
+    font-weight: bold;
+    background-color: rgb(8, 160, 8);
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.prod_price {
+    margin-top: 15px !important;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.prod_off_price {
+    text-decoration: line-through;
+}
+
+.prod_website {
+    background-color: orange;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 3px 10px;
+    border-radius: 50px;
+}

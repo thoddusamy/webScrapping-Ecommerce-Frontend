@@ -1,0 +1,83 @@
+.container-fluid {
+    min-height: 100vh;
+}
+
+.dashConFluid {
+    background-image: url('https://media.istockphoto.com/vectors/cleaning-service-linear-icons-vector-seamless-pattern-household-vector-id1201531449?k=20&m=1201531449&s=612x612&w=0&h=FAWBDTD8Vnzm1heo2pJNwN9wNz0Tp55dIA1SOq0E2N4=');
+    object-fit: cover;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 50px 0;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+.container>h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    padding-top: 20px !important;
+}
+
+.container>h1,
+h6 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.container>h6 {
+    font-family: 'Rancho', cursive;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.18rem;
+}
+
+.searchBar>input {
+    width: 600px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 40px;
+}
+
+.searchBar>input[type="text"] {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+.searchBar>button {
+    width: 30px;
+    height: 30px;
+    background-color: #83ced5 !important;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: -35px;
+}
+
+.add_prod_btn>a {
+    font-family: 'Rancho', cursive;
+    letter-spacing: 1px;
+    transition: transform 200ms ease-in-out;
+}
+
+.add_prod_btn>a:active {
+    transform: scale(0.92);
+}
+
+.add_prod_btn>button {
+    font-family: 'Play', sans-serif;
+    transition: transform 200ms ease-in-out;
+}
+
+.add_prod_btn>button:active {
+    transform: scale(0.92);
+}
