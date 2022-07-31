@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpFromBracket, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { useFormik } from 'formik'
+import toast, { Toaster } from 'react-hot-toast';
 import './Register.css'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -40,9 +41,11 @@ const Register = () => {
         onSubmit: async (values, { resetForm }) => {
             try {
                 let postData = await axios.post(`${config.api}/register`, values)
-                alert(postData.data.message)
                 resetForm({ values: '' })
-                navigate('/login')
+                toast.success(postData.data.message)
+                setTimeout(() => {
+                    navigate("/login")
+                }, 3000)
             } catch (error) {
                 alert('Register Error!')
             }
@@ -55,6 +58,8 @@ const Register = () => {
 
     return (
         <div className="container-fluid regConFluid">
+            <Toaster position="top-right"
+                reverseOrder={false} />
             <div className="container">
                 <div className="row regRow">
                     <h1>Register</h1>
