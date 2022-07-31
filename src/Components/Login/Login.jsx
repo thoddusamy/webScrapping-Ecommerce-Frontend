@@ -4,6 +4,7 @@ import { faArrowRightToBracket, faEye, faEyeSlash } from '@fortawesome/free-soli
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import LoginImg from '../../assets/login.png'
+import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios'
 import { config } from '../../config'
 import './Login.css'
@@ -41,11 +42,14 @@ const Login = () => {
                 const login = await axios.post(`${config.api}/login`, values)
                 localStorage.setItem("login_auth_token", login.data.token)
                 resetForm({ values: '' })
-                alert(login.data.message)
-                navigate("/allproducts")
+                toast.success(login.data.message)
+                setTimeout(() => {
+                    navigate("/allproducts")
+                }, 3000)
+
             } catch (error) {
                 console.log(error);
-                alert(error.response.data.message)
+                toast.error(error.response.data.message)
             }
         }
     })
@@ -53,8 +57,11 @@ const Login = () => {
     const handlePassShown = () => {
         showPass == false ? setShowPass(true) : setShowPass(false)
     }
+
     return (
         <div className="container-fluid loginConFluid">
+            <Toaster position="top-right"
+                reverseOrder={false} />
             <div className="container">
                 <div className="row loginRow">
                     <h1>Login</h1>
